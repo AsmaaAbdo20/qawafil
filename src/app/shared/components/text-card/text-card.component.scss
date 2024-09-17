@@ -1,0 +1,45 @@
+.text-card {
+  transition: all 0.5s;
+  .card-context {
+    .inside-subTitle {
+      color: var(--main-text-color);
+      font-weight: 600;
+      line-height: 2.1875rem;
+    }
+    .link {
+      transition: all 0.3s;
+      .card-link {
+        color: var(--main-text-color);
+      }
+    }
+    .svg {
+      color: var(--main-text-color);
+    }
+    .year {
+      font-size: 0.875rem;
+    }
+  }
+  &:hover {
+    .card-image {
+      &::ng-deep qawafel-card {
+        .card-body .card-image.octagon {
+          clip-path: polygon(
+            (
+              0% 0%,
+              100% 0%,
+              100% 15%,
+              100% 85%,
+              100% 100%,
+              0% 100%,
+              0% 85%,
+              0% 15%
+            )
+          ) !important;
+        }
+      }
+    }
+    .link {
+      transform: translateX(2.1875rem);
+    }
+  }
+}

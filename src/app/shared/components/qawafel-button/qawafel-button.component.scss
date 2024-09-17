@@ -1,0 +1,46 @@
+.shape-inner {
+  padding: 9px 36px;
+  overflow: hidden;
+  border: none;
+  a {
+    text-decoration: none;
+  }
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.dark {
+  color: var(--main-text-color);
+  background-color: var(--primary-color) !important;
+}
+.light {
+  color: var(--primary-color);
+  background-color: var(--main-text-color) !important;
+}
+.octagon {
+  clip-path: polygon(
+    7% 0%,
+    93% 0%,
+    100% 25%,
+    100% 75%,
+    93% 100%,
+    7% 100%,
+    0% 75%,
+    0% 25%
+  );
+  transition: all 0.3s ease-out;
+  &:hover {
+    clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      100% 25%,
+      100% 75%,
+      100% 100%,
+      0% 100%,
+      0% 75%,
+      0% 25%
+    );
+    a {
+      color: #5f757c;
+    }
+  }
+}

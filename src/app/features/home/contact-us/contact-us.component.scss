@@ -1,0 +1,46 @@
+.contact-us {
+  background-color: var(--primary-color);
+  padding: 5.3125rem 0rem;
+
+  .title {
+    color: var(--main-text-color);
+    width: 34%;
+    font-size: 4.375rem;
+  }
+  .paragraph {
+    color: var(--main-text-color);
+    width: 50%;
+  }
+  form {
+    label {
+      color: var(--main-text-color);
+      margin-top: 4.8125rem;
+      font-weight: 200;
+    }
+    input,
+    textarea {
+      background-color: transparent;
+      border: none;
+      resize: none;
+      height: 2.1875rem;
+      &.form-control:focus {
+        box-shadow: none !important;
+      }
+    }
+    .label-container {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -0.3125rem;
+        height: 0.0625rem;
+        width: 90%;
+        left: 0rem;
+        background-color: var(--main-text-color);
+      }
+    }
+    app-qawafel-button {
+      margin-top: 2.8125rem;
+    }
+  }
+}

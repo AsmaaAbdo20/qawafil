@@ -1,0 +1,115 @@
+<section class="about-us">
+  <div class="qawafelContainer">
+    <div class="row">
+      <div class="col-md-5 d-flex flex-column justify-content-between">
+        <h2 class="subTitle">about us</h2>
+        <p class="subTitle parag">qawafil in numbers</p>
+      </div>
+      <div class="col-md-7">
+        <h3 class="about-us__title title w-50">
+          TOGETHER WE BUILD A PROMISING FUTURE
+        </h3>
+        <div class="paragraphs row">
+          <div class="col-6">
+            <p class="w-75">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum vitae nunc ut nibh consequat facilisis Ut condimentum
+              varius
+            </p>
+          </div>
+          <div class="col-6">
+            <p class="w-75">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum vitae nunc ut nibh consequat facilisis Ut condimentum
+              varius
+            </p>
+          </div>
+        </div>
+        <div class="counters d-flex">
+          <div class="count text-center">
+            <div class="count__number">
+              <count-up
+                class="countUp"
+                (click)="onElementClick($event)"
+                #countUp1
+                [options]="{
+                  startVal: 121,
+                  enableScrollSpy: true,
+                  scrollSpyDelay: 60000,
+                  duration: 2,
+                  suffix: '+'
+                }"
+                [countUp]="125"
+              ></count-up>
+              <!-- [countUp]="+homeNumber.number.replace('+', '')" -->
+            </div>
+            <div>
+              <span class="count__title">QUISQUE EGESTAS</span>
+            </div>
+          </div>
+          <div class="count text-center">
+            <div class="count__number">
+              <count-up
+                class="countUp"
+                (click)="onElementClick($event)"
+                #countUp2
+                [options]="{
+                  startVal: 63,
+                  duration: 2,
+                  enableScrollSpy: true,
+                  scrollSpyDelay: 60000,
+                  suffix: '+'
+                }"
+                [countUp]="67"
+              ></count-up>
+            </div>
+            <div>
+              <span class="count__title">QUISQUE EGESTAS</span>
+            </div>
+          </div>
+          <div class="count text-center">
+            <div class="count__number">
+              <count-up
+                class="countUp"
+                (click)="onElementClick($event)"
+                [options]="{
+                  startVal: 50,
+                  duration: 2,
+                  enableScrollSpy: true,
+                  scrollSpyDelay: 60000,
+                  suffix: '+'
+                }"
+                [countUp]="54"
+              ></count-up>
+            </div>
+            <div>
+              <span class="count__title">QUISQUE EGESTAS</span>
+            </div>
+          </div>
+          <div class="count text-center">
+            <div class="count__number">
+              <count-up
+                class="countUp"
+                (click)="onElementClick($event)"
+                [options]="{
+                  startVal: 50,
+                  duration: 2,
+                  enableScrollSpy: true,
+                  scrollSpyDelay: 60000,
+                  suffix: '+'
+                }"
+                [countUp]="54"
+              ></count-up>
+            </div>
+            <div>
+              <span class="count__title">QUISQUE EGESTAS</span>
+            </div>
+          </div>
+        </div>
+        <app-qawafel-button [butColors]="'dark'" [link$]="'/about-us'"
+          >Know More</app-qawafel-button
+        >
+      </div>
+    </div>
+  </div>
+</section>

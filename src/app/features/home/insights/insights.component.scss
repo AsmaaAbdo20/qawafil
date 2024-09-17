@@ -1,0 +1,17 @@
+.insights {
+  background-color: var(--secondary);
+  color: var(--main-text-color);
+  padding: 4.0625rem 0px 5.1875rem;
+  .insights-header {
+    margin-bottom: 5.5rem;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: var(--main-text-color);
+      height: 1px;
+      width: 100%;
+      bottom: -1.5rem;
+    }
+  }
+}

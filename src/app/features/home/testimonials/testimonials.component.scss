@@ -1,0 +1,45 @@
+// @import  'register'  from 'swiper/element/bundl
+
+.testimonials {
+  background-color: var(--main-background-color);
+  color: var(--primary-color);
+  padding: 5.625rem 0rem;
+  .testimonials-header {
+    margin-bottom: 2.4688rem;
+  }
+  &::ng-deep swiper-container {
+    swiper-slide {
+      padding: 50px 0px;
+
+      .slide-container {
+        background-color: var(--ternary);
+        padding: 20px 3.125rem;
+        text-align: center;
+        position: relative;
+        bottom: -20px;
+        .parag {
+          font-size: 18px;
+          color: var(--main-text-color);
+          line-height: 1.125rem;
+          margin-bottom: 2.375rem;
+        }
+        .person-info .name,
+        .person-info .position {
+          font-size: 16px !important;
+          color: var(--secondary);
+        }
+      }
+    }
+    --swiper-navigation-color: var(--ternary);
+    --swiper-navigation-size: 30px;
+    --swiper-navigation-sides-offset: 47%;
+    --swiper-navigation-top-offset: 5%;
+    &::part(button-next) {
+      right: 6rem;
+    }
+    &::part(button-prev) {
+      left: 90% !important;
+    }
+    
+  }
+}

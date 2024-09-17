@@ -1,0 +1,86 @@
+<section class="contact-us">
+  <div class="qawafelContainer">
+    <div class="row g-5">
+      <div class="col-4 contact-us__image octagon">
+        <img
+          class="w-100 h-100"
+          src="../../../assets/images/Photos/contact.png"
+          alt=""
+        />.
+      </div>
+      <div class="col-8 contact-us-form">
+        <div>
+          <h3 class="title">LET'S GET IN TOUCH</h3>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+            vitae nunc ut nibh consequat facilisis Ut condimentum varius
+          </p>
+        </div>
+        <form (submit)="onSubmit()" [formGroup]="form" class="row g-4">
+          <div class="item col-6">
+            <div class="label-container d-flex align-items-end">
+              <label for="name">NAME:</label>
+              <input
+                id="name"
+                type="text"
+                formControlName="name"
+                class="form-control"
+              />
+            </div>
+            <!-- @if(form.controls['name'].touched){
+            <div class="err-msg text-danger mb-2">
+              @if (form.controls['name'].errors?.['required']) {
+              <span>NAME IS Required</span>
+              }
+            </div>
+            } -->
+          </div>
+          <div class="col-6 item">
+            <div class="label-container d-flex align-items-end">
+              <label for="email">EMAIL:</label>
+              <input id="email" formControlName="email" class="form-control" />
+            </div>
+            <!-- @if(form.controls['email'].touched){
+                <div class="err-msg text-danger mb-2">
+                  @if (form.controls['email'].errors?.['required']) {
+                    <span>NAME IS Required</span>
+                  }
+                </div>
+              } -->
+          </div>
+          <div class="item col-6">
+            <div class="label-container d-flex align-items-end">
+              <label for="phone">PHONENUMBER:*</label>
+              <input id="phone" formControlName="phone" class="form-control" />
+            </div>
+            @if(form.controls['phone'].touched){
+            <div class="err-msg text-danger mt-4">
+              @if (form.controls['phone'].errors?.['required']) {
+              <span>PHONENUMBER IS Required</span>
+              }
+            </div>
+            }
+          </div>
+          <div class="item col-6">
+            <div class="d-flex label-container align-items-end">
+              <label for="message">MASSEGE:</label>
+              <textarea
+                id="message"
+                class="form-control"
+                formControlName="message"
+              ></textarea>
+            </div>
+            <!-- @if(form.controls['message'].touched){
+            <div class="err-msg text-danger mb-2">
+              <span>message IS Required</span>
+            </div>
+            } -->
+          </div>
+          <app-qawafel-button [butColors]="'light'" type="submit"
+            >Submit</app-qawafel-button
+          >
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

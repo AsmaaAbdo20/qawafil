@@ -1,0 +1,23 @@
+<div class="row text-card">
+  <div class="col-7 card-image">
+    <qawafel-card [imgSrc]="imgSrc"></qawafel-card>
+  </div>
+  <div class="col-5 card-context d-flex flex-column justify-content-between">
+    <div class="header">
+      <h4 class="inside-subTitle">{{ title }}</h4>
+      <div class="d-flex link">
+        <a class="card-link" routeLink="'/blogs'">{{ linkbtn }}</a>
+        <div class="svg">
+          <img
+            class="svg w-100"
+            src="../../../../assets/images/Photos/download.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div class="year">
+      <span>{{ year }}</span>
+    </div>
+  </div>
+</div>
