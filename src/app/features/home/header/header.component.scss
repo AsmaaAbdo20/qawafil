@@ -25,9 +25,11 @@
     font-size: 6.25rem;
     text-transform: uppercase;
     font-weight: 700;
+    font-family: var(--font-family) !important;
     line-height: 6.6875rem;
     color: var(--main-text-color) !important;
-    font-family: var(--font-family) !important;
+    // font-family: "Franklin Gothic Condensed";
+    // letter-spacing: 5px;
   }
   p {
     width: 40%;
