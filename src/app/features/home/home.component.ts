@@ -7,7 +7,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { UpdateComponent } from './update/update.component';
 import { ShowCaseComponent } from './show-case/show-case.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
-import { ContactUsComponent } from "./contact-us/contact-us.component";
+import { ContactUsComponent } from '../../shared/components/contact-us/contact-us.component';
 
 @Component({
   selector: 'app-home',
@@ -21,8 +21,8 @@ import { ContactUsComponent } from "./contact-us/contact-us.component";
     UpdateComponent,
     ShowCaseComponent,
     TestimonialsComponent,
-    ContactUsComponent
-],
+    ContactUsComponent,
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })

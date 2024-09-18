@@ -8,6 +8,8 @@
 
   .qawafelContainer {
     margin: 2.125rem auto !important;
+    // height: 80%;
+    // background-color: aquamarine;
   }
   .logo {
     width: 9.375rem !important;
@@ -44,6 +46,18 @@
   }
   .menu {
     position: relative;
+    .qawafelContainer {
+      margin: 0 auto !important;
+      // height: 100vh !important;
+      // background-color: aquamarine;
+    }
+    .logo {
+      transform: translateY(20rem);
+    }
+    .menu-content {
+      transform: translateY(5rem);
+
+    }
     .menu-btn {
       background-color: transparent;
       margin-left: 2.8125rem;
@@ -66,6 +80,7 @@
         .details {
           height: 100%;
           position: relative;
+        
           &::after {
             content: "";
             position: absolute;
@@ -74,6 +89,9 @@
             background-color: #a7a6a4;
             right: -3.125rem;
             top: 1.5625rem;
+          }
+          .paragraph{
+            width: 60%;
           }
           .phone {
             font-size: 1.625rem;
